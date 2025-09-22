@@ -1,17 +1,17 @@
-// #include<stdio.h>
-// maxArraySum(int arr[], int n, int k){
-//     int maxSum-0;
-//     //int arr[7]=f-1,2,4,5,-4,3,-7);
-// for (int i=0;i<=n-k; 1++){
-//     int currSum=0;
-//     for(int j=1; j<i+k;j++) {
-//     currSum=currSum+arr[j];
-//     }
-// }
-// if (currSum>maxSum) {
-// maxSum=currSum;
-//     return 0;
-// }
+#include<stdio.h>
+maxArraySum(int arr[], int n, int k){
+    int maxSum-0;
+    //int arr[7]=f-1,2,4,5,-4,3,-7);
+for (int i=0;i<=n-k; 1++){
+    int currSum=0;
+    for(int j=1; j<i+k;j++) {
+    currSum=currSum+arr[j];
+    }
+}
+if (currSum>maxSum) {
+maxSum=currSum;
+    return 0;
+}
 
 
 
