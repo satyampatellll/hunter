@@ -6,7 +6,7 @@ class Car
     string brand;
     string model;
 
-    char_traits(){
+    char_traits(){                                                                                                                                                   
         brand="unknown";
         model="unknown";
     }
