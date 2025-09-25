@@ -41,7 +41,7 @@ int main() {
 }*/
 
 //SPIRAL PRINTING OF 2D ARRAY
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main()
 {
@@ -74,4 +74,82 @@ int main()
     }
 
     return 0;
+}*/
+
+
+//PRINTING BOUNDARY ELEMENTS OF 2D ARRAY
+/*#include <stdio.h>
+int main() {
+    int arr[3][3]={
+        {1,2,3},
+        {4,5,6},
+        {7,8,9}};
+    
+    int i,j;
+
+    //PRINTING THE BOUNDARY ELEMENTS
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            if(i==0 || j==0 || i==2 || j==2){
+                printf("%d ",arr[i][j]);
+            }
+            else{
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}*/
+
+//PRINTING ZIG-ZAG PATTERN
+/*#include <stdio.h>
+int main() {
+    int arr[3][3]={
+        {1,2,3},
+        {4,5,6},
+        {7,8,9}};
+    
+    int i,j;
+
+    //PRINTING THE Z PATTERN
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            if(i==j || i==0 || i==2){
+                printf("%d ",arr[i][j]);
+            }
+            else{
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}*/
+
+
+//PRINTING DIAGONAL ELEMENTS
+#include <stdio.h>
+int main() {
+    int arr[3][3]={
+        {1,2,3},
+        {4,5,6},
+        {7,8,9}};
+    
+    int i,j;
+
+    //PRINTING THE DIAGONAL ELEMENTS
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            if(i==j || (i+j)==2){
+                printf("%d ",arr[i][j]);
+            }
+            else{
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
 }
+
