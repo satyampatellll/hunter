@@ -104,7 +104,7 @@ int main(){
 //question 1:
 //class animal with publice function eat()with cout "this animal eats food"
 //class bird with public fuction wings with cout "bird is flying"
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 class animal{
     public:
@@ -114,7 +114,7 @@ class animal{
 
     }
 };
-class bird:public animal
+class bird:virtual public animal
 {
     public:
     void wings()
@@ -122,7 +122,7 @@ class bird:public animal
         cout<<"bird is flying"<<endl;
     }
 };
-class mammal:public animal
+class mammal:virtual public animal
 {
     public:
     void legs()
@@ -145,8 +145,44 @@ int main(){
     b.legs();
     b.color();
     return 0;
-}
+}*/
 
 //HIERARCHICAL INHERITANCE:
 #include<iostream>
 using namespace std;
+class Animal{
+    public:
+    void eat()
+    {
+        cout<<"this animal eats food"<<endl;
+
+    }
+};
+class Dog:public Animal
+{
+    public:
+    void bark()
+    {
+        cout<<"the dog barks"<<endl;
+    }
+};
+class cat:public Animal
+{
+    public:
+    void meow()
+    {
+        cout<<"the cat meows"<<endl;
+    }
+};
+int main(){
+    Dog dog1;
+    dog1.eat();
+    dog1.bark();
+    cat cat1;
+    cat1.eat();
+    cat1.meow();
+    return 0;
+};
+
+
+

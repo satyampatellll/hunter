@@ -1,4 +1,5 @@
- #include <stdio.h>
+//for fibonacci series
+#include <stdio.h>
 int main() {
     int n=6;
     int t1=0, t2=1, nextTerm;
@@ -40,10 +41,3 @@ int main(){
     }
     return 0;
 }
-
-
-
-
-
-
-

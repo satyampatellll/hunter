@@ -1,0 +1,49 @@
+/* //design the form using App.css file and use tailwind css for styling the form */
+/* Form.css
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.form input {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form button {
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+.form button:hover {
+    background-color: #45a049;
+} */
+ 
+App.jsx
+#parent_div{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#card{
+  height: 240px;
+  width: 151px;
+  border-radius: 21px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: rgb(11, 19, 10);
+}
+img{
+  height: 70%;
+  width: 100%;
+}
