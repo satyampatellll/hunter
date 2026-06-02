@@ -29,7 +29,7 @@
     background-color: #45a049;
 } */
  
-App.jsx
+/* App.jsx
 #parent_div{
   display: flex;
   flex-wrap: wrap;
@@ -46,4 +46,18 @@ App.jsx
 img{
   height: 70%;
   width: 100%;
+} */
+
+navbar.jsx
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(11, 19, 10);
+}
+#navbar a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
 }

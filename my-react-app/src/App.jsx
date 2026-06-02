@@ -128,36 +128,51 @@
 
 // export default App
 
-import { useEffect } from "react"
-import { useState } from "react"
+// import { useEffect } from "react"
+// import { useState } from "react"
 
-import './App.css'
-const App = () => {
-      let [ApiData,SetApiData]=    useState([])
-      useEffect(()=>{
-              //  console.log("hello"); 
-              async  function call(){
-                let res=  await  fetch("https://dummyjson.com/products")
-                let data=        await   res.json()
-                console.log(data.products);
-                SetApiData(data.products)
-              }
-              call()
-      },[])
+// import './App.css'
+// const App = () => {
+//       let [ApiData,SetApiData]=    useState([])
+//       useEffect(()=>{
+//               //  console.log("hello"); 
+//               async  function call(){
+//                 let res=  await  fetch("https://dummyjson.com/products")
+//                 let data=        await   res.json()
+//                 console.log(data.products);
+//                 SetApiData(data.products)
+//               }
+//               call()
+//       },[])
       
+//   return (
+//     <div id="parent_div"   className="">
+//         {
+//           ApiData.map((a)=>{
+//                return(
+//                 <div id="card">
+//                   <h1>{a.id}</h1>
+//                   <img  src={a.thumbnail}/>
+//                 </div>
+//                )
+//           })
+//         }
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+//creating navbar
+import './navbar,jsx'
+import React from 'react'
+
+function App() {
   return (
-    <div id="parent_div"   className="">
-        {
-          ApiData.map((a)=>{
-               return(
-                <div id="card">
-                  <h1>{a.id}</h1>
-                  <img  src={a.thumbnail}/>
-                </div>
-               )
-          })
-        }
-    </div>
+    <div>
+      <navbar />
+      App</div>
   )
 }
 
